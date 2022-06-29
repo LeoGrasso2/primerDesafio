@@ -12,19 +12,14 @@ function menu(opcion){
     let n2;
     switch(opcion){
         case 1:
-            n1=prompt('Ingrese el monto total.')
-            n1=Number.parseInt(n1);
-            n2=prompt('Ingrese la cantidad de cuotas a utilizar.');
-            n2=Number.parseInt(n2);
+            n1=Number.parseInt(prompt('Ingrese el monto total.'));
+            n2=Number.parseInt(prompt('Ingrese la cantidad de cuotas a utilizar.'));
             alert('El monto total sería de $' + n1 + ', en ' + n2 + ' cuotas de $' + (n1/n2) +'.');
         break;
         case 2:
-            n1=prompt('Ingrese el monto total.')
-            n1=Number.parseInt(n1);
-            n2=prompt('Ingrese la cantidad de cuotas a utilizar.');
-            n2=Number.parseInt(n2);
-            let n3=prompt('Ingrese el porcentaje de interés');
-            n3=Number.parseInt(n3);
+            n1=Number.parseInt(prompt('Ingrese el monto total.'));
+            n2=Number.parseInt(prompt('Ingrese la cantidad de cuotas a utilizar.'));
+            let n3=Number.parseInt(prompt('Ingrese el porcentaje de interés'));
             let extra=(n1*n3)/100;
             alert('El monto total sería de $' + (n1+extra) + ', en ' + n2 + ' cuotas de $' + ((n1+extra)/n2) +'.');
         break;
